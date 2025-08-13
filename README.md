@@ -1,5 +1,5 @@
 # 🏠 House Price Prediction — Regression Project
-This project is a university-style machine learning assignment that predicts housing prices using regression models.
+This project is a machine learning assignment that predicts housing prices using regression models.
 It uses the Boston Housing dataset (via OpenML) or falls back to California Housing if Boston is unavailable.
 
 ---
