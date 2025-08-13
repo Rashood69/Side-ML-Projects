@@ -41,51 +41,31 @@ Run in Jupyter Notebook, VS Code, or PyCharm.
   ```
 # 📊 Model Workflow
 1. **Data Loading**
+  - Load Boston Housing from OpenML.
+  - Fallback to California Housing if needed.
 2. **Preprocessing**
+  - Scale numeric features with StandardScaler.
+  - Encode categorical features with OneHotEncoder.
+  - Use ColumnTransformer for clean pipelines.
 3. **Modeling**
+  - Linear Regression (baseline).
+  - Random Forest Regressor (non-linear, tree-based).
 4. **Evaluation Metrics**
+  - **MAE** (Mean Absolute Error)
+  - **MSE** (Mean Squared Error)
+  - **RMSE** (Root Mean Squared Error)
+  - **R**² Score (Coefficient of Determination)
+  - Cross-validation for robustness.
 5. **Visualizations**
+  - Correlation heatmap.
+  - Predicted vs Actual scatter plots.
+  - Residual distribution plot.
+  - Feature importance for Random Forest.
+  - Load Boston Housing from OpenML.
+  - Fallback to California Housing if needed.
 
+---
 
-Load Boston Housing from OpenML.
-
-Fallback to California Housing if needed.
-
-Preprocessing
-
-Scale numeric features with StandardScaler.
-
-Encode categorical features with OneHotEncoder.
-
-Use ColumnTransformer for clean pipelines.
-
-Modeling
-
-Linear Regression (baseline).
-
-Random Forest Regressor (non-linear, tree-based).
-
-Evaluation Metrics
-
-MAE (Mean Absolute Error)
-
-MSE (Mean Squared Error)
-
-RMSE (Root Mean Squared Error)
-
-R² Score (Coefficient of Determination)
-
-Cross-validation for robustness.
-
-Visualizations
-
-Correlation heatmap.
-
-Predicted vs Actual scatter plots.
-
-Residual distribution plot.
-
-Feature importance for Random Forest.
 ## Visual Insights
 
 | Plot | Description |
