@@ -1,33 +1,91 @@
 # 🏠 House Price Prediction — Regression Project
-
-This is a **university-style ML project** to predict housing prices using regression, following industry-level presentation and best practices.
-
-[![Demo Workflow](images/demo.gif)](images/demo.gif)  
-*A quick walkthrough of the project's workflow*
+This project is a university-style machine learning assignment that predicts housing prices using regression models.
+It uses the Boston Housing dataset (via OpenML) or falls back to California Housing if Boston is unavailable.
 
 ---
 
-#📌 Project Overview
-
-- Load the **Boston Housing dataset** (via OpenML), falling back to **California Housing** if Boston is unavailable.
-- Preprocess data: **scale numeric features** and apply **one-hot encoding** for categorical variables.
-- Compare two models:
-  - **Linear Regression** (baseline, interpretable)
-  - **Random Forest Regressor** (nonlinear ensemble)
-- Evaluate models with metrics:
-  - Mean Absolute Error (MAE)
-  - Mean Squared Error (MSE)
-  - Root Mean Squared Error (RMSE)
-  - R² Score
-  - 5-fold cross-validation for stability
-- Generate visualizations:
-  - Correlation heatmap
-  - Predicted vs Actual scatter plots
-  - Residuals distribution
-  - Feature importance chart (Random Forest)
+# 📌 Project Overview
+The goal is to:
+- Perform feature preprocessing (scaling numeric data, one-hot encoding categorical variables).
+- Compare Linear Regression and Random Forest models.
+- Evaluate models using MAE, MSE, RMSE, R² metrics.
+- Visualize results (correlation heatmap, predicted vs actual, residuals, feature importance).
 
 ---
 
+# 📂 Dataset
+- Primary: [Boston Housing Dataset](https://www.openml.org/d/531)
+- Fallback: [California Housing Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html)
+
+---
+
+# ⚙️ Requirements
+Install dependencies:
+```bash
+pip install scikit-learn pandas numpy matplotlib seaborn
+```
+
+---
+
+# 🚀 Running the Project
+Run in Jupyter Notebook, VS Code, or PyCharm.
+
+- 1. Clone the repository:
+  ```bash
+  git clone https://github.com/yourusername/house-price-prediction.git
+  cd house-price-prediction
+  ```
+- 2. Run the .ipynb file:
+  ```bash
+  jupyter notebook House_Price_Prediction.ipynb
+  ```
+# 📊 Model Workflow
+- 1. **Data Loading**
+- 2. **Preprocessing**
+- 3. **Modeling**
+- 4. **Evaluation Metrics**
+- 5. **Visualizations**
+
+
+Load Boston Housing from OpenML.
+
+Fallback to California Housing if needed.
+
+Preprocessing
+
+Scale numeric features with StandardScaler.
+
+Encode categorical features with OneHotEncoder.
+
+Use ColumnTransformer for clean pipelines.
+
+Modeling
+
+Linear Regression (baseline).
+
+Random Forest Regressor (non-linear, tree-based).
+
+Evaluation Metrics
+
+MAE (Mean Absolute Error)
+
+MSE (Mean Squared Error)
+
+RMSE (Root Mean Squared Error)
+
+R² Score (Coefficient of Determination)
+
+Cross-validation for robustness.
+
+Visualizations
+
+Correlation heatmap.
+
+Predicted vs Actual scatter plots.
+
+Residual distribution plot.
+
+Feature importance for Random Forest.
 ## Visual Insights
 
 | Plot | Description |
@@ -38,14 +96,3 @@ This is a **university-style ML project** to predict housing prices using regres
 | ![Feature Importance](images/feature_importance.png) | Most influential features |
 
 ---
-
-## Quick Start
-
-```bash
-git clone https://github.com/Rashood69/Side-ML-Projects.git
-cd Side-ML-Projects
-
-
-
-Feature importance for Random Forest.
-
