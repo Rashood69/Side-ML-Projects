@@ -30,21 +30,21 @@ pip install scikit-learn pandas numpy matplotlib seaborn
 # 🚀 Running the Project
 Run in Jupyter Notebook, VS Code, or PyCharm.
 
-- 1. Clone the repository:
+1. Clone the repository:
   ```bash
   git clone https://github.com/yourusername/house-price-prediction.git
   cd house-price-prediction
   ```
-- 2. Run the .ipynb file:
+2. Run the .ipynb file:
   ```bash
   jupyter notebook House_Price_Prediction.ipynb
   ```
 # 📊 Model Workflow
-- 1. **Data Loading**
-- 2. **Preprocessing**
-- 3. **Modeling**
-- 4. **Evaluation Metrics**
-- 5. **Visualizations**
+1. **Data Loading**
+2. **Preprocessing**
+3. **Modeling**
+4. **Evaluation Metrics**
+5. **Visualizations**
 
 
 Load Boston Housing from OpenML.
